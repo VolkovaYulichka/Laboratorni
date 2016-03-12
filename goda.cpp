@@ -11,14 +11,16 @@ int main(int argc, char *argv[])
 	if (n>=101) { 
 		printf ("Not correct enter(0-101).Try againt\n");
 	} else {
-		if ((n==1) && (n==21) && (n == 31) && (n==41) && (n==51) && (n==61) && (n==71) && (n==81) && (n==91)) { 
+		if((n%10==1)){ 
 			printf("god\n"); 
 		} else { 
-			if ((n>=2) && (n<=4)) { 
+			if((n%10==2)||(n%10==3)||(n%10==4)){ 
 				printf("goda\n"); 
 				} else { 
-					if ((n>=5) && (n<=20)) { 
+					if((n%10==0)||(n%10==5)){ 
 						printf("let\n"); 
+						if((n%10>=6)&&(n%10<=9)){
+						printf("Vam let",n);
 					} 
 				} 
 		}
@@ -26,5 +28,5 @@ int main(int argc, char *argv[])
 	system("pause"); 
 	return 0; 
 }
-
+}
 

@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main ()
+{
+	float n, y;
+	
+	printf("Vvedite 'n': ");
+	scanf("%f", &n);
+	
+	if (n <= 0) {
+		y = 0;
+		printf("f(n)= %.2f", y);
+	} else {
+		if ((0 < n)&&(n <= 1)) {
+			y = n;
+			printf("f(n)= %.2f", y);
+		} else {
+			y = n * n * n;
+			printf("f(n)= %.2f", y);
+		}
+	}
+	
+	return 0;
+}

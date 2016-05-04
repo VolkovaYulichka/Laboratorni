@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main ()
+{
+	float n, y;
+	
+	printf("Vvedite 'n': ");
+	scanf("%f", &n);
+	
+	if ((-3 <= n)&&(n <= 5)) {
+		y = n * n;
+		printf("\nf(n)= %.2f", y);
+	} else {
+		y = 6 * n;
+		printf("\nf(n)= %.2f", y);
+	}
+	
+	return 0;
+}
